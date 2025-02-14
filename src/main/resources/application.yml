@@ -72,6 +72,9 @@ aws:
   bedrock:
     model-id: ${aws_bedrock_model_id}
 
+## storage
+storage:
+  location: ${storage_location}
 
 ## logging
 logging:
