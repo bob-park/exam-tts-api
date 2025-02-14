@@ -1,4 +1,4 @@
-package org.bobparlk.configure.security;
+package org.bobpark.configure.security;
 
 import java.util.List;
 import java.util.Map;
@@ -25,9 +25,9 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.web.cors.CorsConfigurationSource;
 
-import org.bobparlk.configure.security.converter.JwtRoleGrantAuthoritiesConverter;
-import org.bobparlk.configure.security.handler.RestAccessDeniedHandler;
-import org.bobparlk.configure.security.handler.RestAuthenticationEntryPoint;
+import org.bobpark.configure.security.converter.JwtRoleGrantAuthoritiesConverter;
+import org.bobpark.configure.security.handler.RestAccessDeniedHandler;
+import org.bobpark.configure.security.handler.RestAuthenticationEntryPoint;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;

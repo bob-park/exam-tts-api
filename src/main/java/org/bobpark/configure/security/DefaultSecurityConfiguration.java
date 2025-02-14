@@ -1,4 +1,4 @@
-package org.bobparlk.configure.security;
+package org.bobpark.configure.security;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

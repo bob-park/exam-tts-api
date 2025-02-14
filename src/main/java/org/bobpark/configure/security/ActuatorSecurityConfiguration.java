@@ -1,4 +1,4 @@
-package org.bobparlk.configure.security;
+package org.bobpark.configure.security;
 
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;

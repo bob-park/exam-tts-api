@@ -1,4 +1,4 @@
-package org.bobparlk.configure.security.converter;
+package org.bobpark.configure.security.converter;
 
 import java.util.Collection;
 import java.util.List;

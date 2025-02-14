@@ -1,4 +1,4 @@
-package org.bobparlk;
+package org.bobpark;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

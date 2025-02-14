@@ -82,3 +82,4 @@ logging:
     root: info
     web: ${logs_web_level:info}
     com.malgn: ${logs_malgn_level:info}
+    org.bobpark: debug

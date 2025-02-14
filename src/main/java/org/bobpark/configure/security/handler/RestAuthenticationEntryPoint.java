@@ -1,4 +1,4 @@
-package org.bobparlk.configure.security.handler;
+package org.bobpark.configure.security.handler;
 
 import static com.malgn.common.model.ApiResult.*;
 
