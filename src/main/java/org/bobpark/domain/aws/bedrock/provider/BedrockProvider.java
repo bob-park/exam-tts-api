@@ -35,7 +35,7 @@ public class BedrockProvider {
         7. Format as one line.
         8. remove semicolon end of query.
         9. NEVER ADD EXPLANATIONS COMMENTS IT'S DANGEROUS.
-        10. if it is not a specific situation, "LIMIT" is unlimited.
+        10. "ORDER BY" clause, If it is not a specific situation, "in_point" ascending order.
         11. Similar words are as follows.
         [
             {

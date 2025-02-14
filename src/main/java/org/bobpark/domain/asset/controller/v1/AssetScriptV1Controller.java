@@ -27,4 +27,5 @@ public class AssetScriptV1Controller {
         @RequestBody CreateAssetScriptV1Request createRequest) {
         return assetScriptService.createScript(assetId, createRequest);
     }
+
 }
