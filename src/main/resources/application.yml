@@ -62,7 +62,7 @@ malgn:
   auth:
     user:
       enabled: on
-      host: ${auth-user-host:http://localhost:8080}
+      host: ${auth_user_host:http://localhost:8080}
 
 ## aws
 aws:
