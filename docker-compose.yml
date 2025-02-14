@@ -1,0 +1,10 @@
+services:
+  exam-tts-api:
+    container_name: exam-tts-api
+    image: ghcr.io/bob-park/exam-tts-api
+    build:
+      dockerfile: ./Dockerfile
+      x-bake:
+        platforms:
+          - linux/amd64
+          - linux/arm64
