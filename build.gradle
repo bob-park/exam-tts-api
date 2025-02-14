@@ -66,8 +66,21 @@ dependencies {
     implementation("com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta")
     annotationProcessor("com.querydsl:querydsl-apt:${queryDslVersion}:jakarta")
     testAnnotationProcessor("com.querydsl:querydsl-apt:${queryDslVersion}:jakarta")
+
+    // aws
+    implementation 'software.amazon.awssdk:bedrockruntime'
+
+
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'software.amazon.awssdk:bom:2.30.18'
+    }
 }
 
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+

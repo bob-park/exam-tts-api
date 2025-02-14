@@ -55,6 +55,7 @@ spring:
     virtual:
       enabled: on
 
+
 ## malgn
 malgn:
   enabled: on
@@ -62,6 +63,12 @@ malgn:
     user:
       enabled: on
       host: ${auth-user-host:http://localhost:8080}
+
+## aws
+aws:
+  region: ap-northeast-2
+  access-key: ${aws_access_key}
+  secret-key: ${aws_secret_key}
 
 ## logging
 logging:
