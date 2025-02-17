@@ -46,33 +46,63 @@ public class BedrockProvider {
         
         
         Schema:
-        {
-         	"database": "tts",
-         	"table_name": "assets_scripts",
-         	"columns": [
-         		{
-         			"name": "id",
-         			"type": "bigint",
-         			"description": "고유 아이디"
-         		},
-         		{
-         			"name": "in_point",
-         			"type": "bigint",
-         			"description": "이벤트 시작 지점"
-         		},
-         		{
-         			"name": "out_point",
-         			"type": "bigint",
-         			"description": "이벤트 종료 지점"
-         		},
-         		{
-         			"name": "contents",
-         			"type": "bigint",
-         			"description": "이벤트 내용",
-         			"format": "{team name} {uniform number} {player name} {event}"
-         		}
-         	]
-         }
+        [
+            {
+                "database": "tts",
+                "table_name": "assets",
+                "description": "경기 영상 정보",
+                "columns": [
+                    {
+                        "name": "id",
+                        "type": "bigint",
+                        "description": "애셋 아이디"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string",
+                        "description": "경기 영상 제목",
+                        "format": "{home team name} vs {away team name} ({yyyy.MM.dd})"
+                    }
+                ]
+             },
+            {
+                "database": "tts",
+                "table_name": "assets_scripts",
+                "description": "경기 이벤트 정보",
+                "columns": [
+                    {
+                        "name": "id",
+                        "type": "bigint",
+                        "description": "고유 아이디"
+                    },
+                    {
+                        "name": "in_point",
+                        "type": "bigint",
+                        "description": "이벤트 시작 지점 (frame 단위)"
+                    },
+                    {
+                        "name": "out_point",
+                        "type": "bigint",
+                        "description": "이벤트 종료 지점 (frame 단위)"
+                    },
+                    {
+                        "name": "contents",
+                        "type": "string",
+                        "description": "이벤트 내용",
+                        "format": "{team name} {uniform number} {player name} {event}"
+                    },
+                    {
+                        "name": "asset_id",
+                        "type": "bigint",
+                        "description": "경기 영상 아이디",
+                        "foreignKey": {
+                            "table": "assets",
+                            "column": "id"
+                        }
+                    }
+                ]
+             }             
+        ]
         
         User Instruction: {{naturalLanguageQuery}}
         """;
