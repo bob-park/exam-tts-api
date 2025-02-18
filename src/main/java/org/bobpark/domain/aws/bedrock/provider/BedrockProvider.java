@@ -24,25 +24,24 @@ import org.bobpark.configure.aws.properties.AwsBedrockProperties;
 public class BedrockProvider {
 
     public static final String DEFAULT_TEMPLATE = """
-       Create a PosrgreSQL query with the following requirements:
+        Create a PosrgreSQL query with the following requirements:
         
         1. Follow proper SQL syntax.
         2. Use the syntax "OFFSET start LIMIT count" for pagination.
-        3. "SELECT" clause, Please only whildcard. 
+        3. "SELECT" clause, Please only whildcard.
         4. "FROM" clause, Please only table name.
         5. If you exceed one word in the like grammar, please separate it.
         6. Ensure the query does not have any syntax errors and is fully compatible with standard SQL conventions.
         7. Format as one line.
         8. remove semicolon end of query.
         9. NEVER ADD EXPLANATIONS COMMENTS IT'S DANGEROUS.
-        10. "ORDER BY" clause, If it is not a specific situation, "in_point" ascending order.
-        11. Similar words are as follows.
+        10. Similar words are as follows.
         [
             {
-                "word": "득점",
-                "similarWord": "성공"
+                "words": ["득점"],
+                "similarWords": ["성공"]
             }
-        ] 
+        ]
         
         
         Schema:
@@ -101,7 +100,7 @@ public class BedrockProvider {
                         }
                     }
                 ]
-             }             
+             }
         ]
         
         User Instruction: {{naturalLanguageQuery}}
