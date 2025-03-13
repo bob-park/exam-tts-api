@@ -42,11 +42,10 @@ public class BedrockProvider {
                 "similarWords": ["성공"]
             }
         ]
-        11. Proceed join tables with schemas.
-        12. "ORDER BY" clause is as follows.
+        11. "ORDER BY" clause is as follows.
         {
             "words": ["마지막", "최근"],
-            "orderBy": "assets.id DESC"
+            "orderBy": "asset_id DESC"
         }
         
         
