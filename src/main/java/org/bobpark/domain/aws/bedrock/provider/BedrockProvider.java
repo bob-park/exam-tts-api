@@ -42,13 +42,20 @@ public class BedrockProvider {
                 "similarWords": ["성공"]
             }
         ]
+        11. Proceed join tables with schemas.
+        12. "ORDER BY" clause is as follows.
+        {
+            "words": ["마지막", "최근"],
+            "orderBy": "assets.id DESC"
+        }
+        
         
         
         Schema:
         [
             {
-                "database": "tts",
                 "table_name": "assets",
+                "join_alias": "assets",
                 "description": "경기 영상 정보",
                 "columns": [
                     {
@@ -65,8 +72,8 @@ public class BedrockProvider {
                 ]
              },
             {
-                "database": "tts",
                 "table_name": "assets_scripts",
+                "join_alias": "assets_scripts",
                 "description": "경기 이벤트 정보",
                 "columns": [
                     {
